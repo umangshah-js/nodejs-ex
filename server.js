@@ -6,6 +6,9 @@ app.use(express.json());
 app.get("/", function (request, response) {
  response.send('{"status":true}');
 });
+app.get("/",function(request,reponse){
+	response.send("{'status':'running'}");
+ });
 
 app.post("/scores", function (request, response) {
  let scores = request.body.scores;
